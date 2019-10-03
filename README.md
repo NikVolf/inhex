@@ -1,6 +1,20 @@
 # inhex
 Indented hex strings for your test data
 
+## Usage
+
+```rust
+    #[test]
+    fn test_data() {
+        let data: Vec<u8> = inhex::inhex!("
+            0efd
+            5f74
+        ");
+
+        assert_eq!(&data[..], &[0x0e, 0xfd, 0x5f, 0x74][..]);
+    }
+```
+
 # License
 
 `inhex` is primarily distributed under the terms of both the MIT
