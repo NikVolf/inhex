@@ -3,6 +3,15 @@ Indented hex strings for your test data
 
 ## Usage
 
+Add to Cargo.toml
+
+```toml
+[dev-dependencies]
+inhex = "0.1"
+```
+
+and use hex data in your tests:
+
 ```rust
     #[test]
     fn test_data() {
