@@ -1,0 +1,15 @@
+[package]
+name = "inhex"
+version = "0.1.2"
+authors = ["Nikolay Volf <nikvolf@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/nikvolf/inhex"
+description = "Indented hex strings for your test data"
+keywords = ["hex", "testing"]
+edition = "2018"
+exclude = ["usage/"]
+
+[dependencies]
+indoc = "0.3"
+rustc-hex = "2"
